@@ -178,13 +178,13 @@
       if (weatherData[cityInput]) {
         const data = weatherData[cityInput];
 
-        document.getElementById('weatherCountry').textContent = ${capitalize(cityInput)}, ${data.country};
-        document.getElementById('temperature').innerHTML = ${data.temp}°C;
+        document.getElementById('weatherCountry').textContent = `${capitalize(cityInput)}, ${data.country}`;
+        document.getElementById('temperature').innerHTML = `${data.temp}°C`;
         document.getElementById('weatherDescription').textContent = data.description;
-        document.getElementById('feelsLike').textContent = Feels Like: ${data.feels_like}°C;
-        document.getElementById('humidity').textContent = Humidity: ${data.humidity}%;
-        document.getElementById('longitude').textContent = Longitude: ${data.lon};
-        document.getElementById('latitude').textContent = Latitude: ${data.lat};
+        document.getElementById('feelsLike').textContent = `Feels Like: ${data.feels_like}°C`;
+        document.getElementById('humidity').textContent = `Humidity: ${data.humidity}%`;
+        document.getElementById('longitude').textContent = `Longitude: ${data.lon}`;
+        document.getElementById('latitude').textContent = `Latitude: ${data.lat}`;
         document.getElementById('tempIcon').src = data.icon;
       } else {
         alert("City not found. Try Chennai, Madurai, Coimbatore, Salem, or Tirunelveli.");
